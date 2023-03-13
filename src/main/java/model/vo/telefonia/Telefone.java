@@ -2,15 +2,17 @@ package model.vo.telefonia;
 
 public class Telefone {
 	
+	private Integer id;
 	private Integer idCliente;
 	private String ddd;
 	private String numero;
 	private boolean ativo;
 	private boolean movel;
+	
 	public Telefone() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
+	
 	public Telefone(Integer idCliente, String ddd, String numero, boolean ativo, boolean movel) {
 		super();
 		this.idCliente = idCliente;
@@ -19,6 +21,7 @@ public class Telefone {
 		this.ativo = ativo;
 		this.movel = movel;
 	}
+	
 	public Integer getIdCliente() {
 		return idCliente;
 	}

@@ -3,12 +3,14 @@ package model.vo.telefonia;
 import java.util.List;
 
 public class Cliente {
-
+	
+	private Integer id;
 	private String nome;
 	private String cpf;
 	private List<Telefone> telefones;
 	private boolean ativo;
 	private Endereco endereco;
+	
 	public Cliente() {
 		super();
 		// TODO Auto-generated constructor stub
@@ -21,6 +23,7 @@ public class Cliente {
 		this.ativo = ativo;
 		this.endereco = endereco;
 	}
+	
 	public String getNome() {
 		return nome;
 	}
