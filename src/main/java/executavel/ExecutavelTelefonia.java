@@ -12,18 +12,18 @@ public class ExecutavelTelefonia {
 		
 		
 		
-		//metodo inserir telefone na tabela
+		//metodo inserir telefone no DB
 		if(telDAO.inserir(tel1) ){
 			System.out.println("Telefone cadastrado com Sucesso!!!");
 		}
 		
-		//metodo
+		//metodo de consultar telefone no DB
 		//o tal do metodo
 		
-		//metodo
+		//metodo de atualizar Telefone no DB
 		//o tal do metodo
 		
-		//metodo
+		//metodo deletar telefone no DB
 		//o tal do metodo
 		
 		
