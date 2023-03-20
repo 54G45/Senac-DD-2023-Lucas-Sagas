@@ -38,7 +38,7 @@ public class EnderecoDAO {
 			//Preencher o id gerado no banco no objeto
 			ResultSet resultado = query.getGeneratedKeys();
 			if(resultado.next()) {
-				novoEndereco.setId(resultado.getInt(1));
+//				novoEndereco.setId(resultado.getInt(1));
 			}
 			
 		} catch (SQLException e) {
@@ -68,7 +68,7 @@ public class EnderecoDAO {
 			query.setString(4, enderecoEditado.getBairro());
 			query.setString(5, enderecoEditado.getCidade());
 			query.setString(6, enderecoEditado.getEstado());
-			query.setInt(7, enderecoEditado.getId());
+//			query.setInt(7, enderecoEditado.getId());
 			
 			int quantidadeLinhasAtualizadas = query.executeUpdate();
 			atualizou = quantidadeLinhasAtualizadas > 0;
@@ -96,7 +96,7 @@ public class EnderecoDAO {
 			
 			if(resultado.next()) {
 				enderecoConsultado = new Endereco();
-				enderecoConsultado.setId(resultado.getInt("id"));
+//				enderecoConsultado.setId(resultado.getInt("id"));
 				enderecoConsultado.setCep(resultado.getString("cep"));
 				enderecoConsultado.setRua(resultado.getString("rua"));
 				enderecoConsultado.setBairro(resultado.getString("bairro"));
