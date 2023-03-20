@@ -38,7 +38,7 @@ public class EnderecoDAO {
 			//Preencher o id gerado no banco no objeto
 			ResultSet resultado = query.getGeneratedKeys();
 			if(resultado.next()) {
-//				novoEndereco.setId(resultado.getInt(1));
+				novoEndereco.setId(resultado.getInt(1));
 			}
 			
 		} catch (SQLException e) {
