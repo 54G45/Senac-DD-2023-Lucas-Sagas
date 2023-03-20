@@ -10,6 +10,7 @@ public class ExecutavelTelefonia {
 		Telefone tel1 = new Telefone();
 		TelefoneDAO telDAO = new TelefoneDAO();
 		
+		//abced
 		
 		
 		//metodo inserir telefone no DB
