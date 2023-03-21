@@ -14,7 +14,7 @@ public class TelefoneDAO {
 		boolean deuBom = false;
 
 		Connection conn = Banco.getConnection();
-		String sql = " insert into " + " telefone (idcliente, ddd, numero, ativo, movel) " + " values (?, ?, ?, ?, ?) ";
+		String sql = " insert into telefone (idcliente, ddd, numero, ativo, movel) " + " values (?, ?, ?, ?, ?) ";
 		PreparedStatement query = Banco.getPreparedStatementWithPk(conn, sql);
 
 		try {

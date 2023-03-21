@@ -8,6 +8,13 @@ public class Endereco {
 	private String rua;
 	private String bairro;
 	private String cidade;
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
 	private String estado;
 	
 	public Endereco() {
