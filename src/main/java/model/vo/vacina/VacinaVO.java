@@ -12,7 +12,6 @@ public class VacinaVO {
 	
 	public VacinaVO() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 	
 	public VacinaVO(int id, String paisDeOrigem, int estagioDaPesquisa, LocalDate dataDeInicioDaPesquisa,
