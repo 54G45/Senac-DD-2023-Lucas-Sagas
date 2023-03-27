@@ -23,7 +23,7 @@ public class PessoaDAO {
 			
 			query.setString(1, pessoa.getNome());
 			query.setObject(2, pessoa.getDataNascimento());
-			query.setObject(3, pessoa.getSexo());
+			query.setString(3, String.valueOf(pessoa.getSexo()));
 			query.setString(4, pessoa.getCpf());
 			query.setString(5, pessoa.getTipo());
 			
