@@ -14,22 +14,25 @@ pesquisadorResponsavel varchar(100)
 );
 
 create table pessoa(
-idpessoa int auto_increment,
+idpessoa int auto_increment primary key,
 nome varchar(100) not null,
 dataNascimento datetime,
 sexo char,
 cpf varchar(11),
-tipo varchar(45)
+tipo int
 
 );
 
-insert into pessoa()
-values ();
+create table tipoPessoa(
+idTipoPessoa int auto_increment primary key,
+tipo varchar(15)
+);
 
-insert into vacina (paisDeOrigem, estagioDaPesquisa, dataDeInicioDaPesquisa, pesquisadorResponsavel)
-values ();
+insert into tipoPessoa(tipo) values ('pesquisador');
+insert into tipoPessoa(tipo) values ('voluntario');
+insert into tipoPessoa(tipo) values ('comum');
 
-select * from vacina;
+
 
 
 
