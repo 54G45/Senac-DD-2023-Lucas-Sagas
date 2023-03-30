@@ -1,4 +1,4 @@
-package executavel;
+package view;
 
 import model.dao.telefonia.TelefoneDAO;
 import model.vo.telefonia.Telefone;

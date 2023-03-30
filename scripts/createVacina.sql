@@ -14,7 +14,7 @@ pesquisadorResponsavel varchar(100)
 );
 
 create table pessoa(
-idpessoa int auto_increment primary key,
+id int auto_increment primary key,
 nome varchar(100) not null,
 dataNascimento datetime,
 sexo char,
@@ -24,13 +24,13 @@ tipo int
 );
 
 create table tipoPessoa(
-idTipoPessoa int auto_increment primary key,
-tipo varchar(15)
+id int auto_increment primary key,
+descricao varchar(15)
 );
 
-insert into tipoPessoa(tipo) values ('pesquisador');
-insert into tipoPessoa(tipo) values ('voluntario');
-insert into tipoPessoa(tipo) values ('comum');
+insert into tipoPessoa(descricao) values ('pesquisador');
+insert into tipoPessoa(descricao) values ('voluntario');
+insert into tipoPessoa(descricao) values ('comum');
 
 
 
