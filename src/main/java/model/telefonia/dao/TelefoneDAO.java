@@ -1,12 +1,12 @@
-package model.dao.telefonia;
+package model.telefonia.dao;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-import model.dao.Banco;
-import model.vo.telefonia.Telefone;
+import model.Banco;
+import model.telefonia.vo.Telefone;
 
 public class TelefoneDAO {
 

@@ -1,4 +1,4 @@
-package model.vo.vacina;
+package model.vacina.vo;
 
 public enum TipoPessoa {
 	pesquisador (1),

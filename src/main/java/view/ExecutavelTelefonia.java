@@ -1,7 +1,7 @@
 package view;
 
-import model.dao.telefonia.TelefoneDAO;
-import model.vo.telefonia.Telefone;
+import model.telefonia.dao.TelefoneDAO;
+import model.telefonia.vo.Telefone;
 
 public class ExecutavelTelefonia {
 

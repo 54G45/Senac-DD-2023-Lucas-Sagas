@@ -1,4 +1,4 @@
-package model.vo.telefonia;
+package model.telefonia.vo;
 
 public class Telefone {
 

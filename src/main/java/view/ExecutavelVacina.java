@@ -2,9 +2,9 @@ package view;
 
 import java.time.LocalDate;
 
-import model.dao.vacina.PessoaDAO;
-import model.vo.vacina.PessoaVO;
-import model.vo.vacina.TipoPessoa;
+import model.vacina.dao.PessoaDAO;
+import model.vacina.vo.Pessoa;
+import model.vacina.vo.TipoPessoa;
 
 public class ExecutavelVacina {
 
@@ -18,7 +18,7 @@ public class ExecutavelVacina {
 //		}
 		
 		PessoaDAO pessoaDAO = new PessoaDAO();
-		PessoaVO pessoa = new PessoaVO("Giuseppi", LocalDate.of(2000, 01, 01), 'm', "10203040500", TipoPessoa.COMUN);
+		Pessoa pessoa = new Pessoa("Giuseppi", LocalDate.of(2000, 01, 01), 'm', "10203040500", TipoPessoa.COMUN);
 		
 		
 		if(pessoaDAO.cadastrarPessoa(pessoa)) {

@@ -1,4 +1,4 @@
-package model.dao.vacina;
+package model.vacina.dao;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -7,13 +7,13 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import model.dao.Banco;
-import model.vo.vacina.PessoaVO;
-import model.vo.vacina.TipoPessoa;
+import model.Banco;
+import model.vacina.vo.Pessoa;
+import model.vacina.vo.TipoPessoa;
 
 public class PessoaDAO {
 
-	public boolean cadastrarPessoa(PessoaVO pessoa) {
+	public boolean cadastrarPessoa(Pessoa pessoa) {
 
 		boolean deuBom = false;
 
@@ -49,9 +49,9 @@ public class PessoaDAO {
 
 	}
 
-	public PessoaVO consultarPorId(int id) {
+	public Pessoa consultarPessoaPorId(int id) {
 
-		PessoaVO pessoa = null;
+		Pessoa pessoa = null;
 
 		Connection conexao = Banco.getConnection();
 		String sql = " select * from pessoa where id = ? ";
@@ -76,11 +76,11 @@ public class PessoaDAO {
 		return pessoa;
 	}
 
-	public List<PessoaVO> consultarTodos() {
+	public List<Pessoa> consultarPessoaTodos() {
 
-		PessoaVO pessoa = null;
+		Pessoa pessoa = null;
 
-		ArrayList<PessoaVO> listaPessoas = new ArrayList<PessoaVO>();
+		ArrayList<Pessoa> listaPessoas = new ArrayList<Pessoa>();
 
 		Connection conexao = Banco.getConnection();
 		String sql = " select * from pessoa ";
@@ -105,9 +105,9 @@ public class PessoaDAO {
 		return listaPessoas;
 	}
 
-	private PessoaVO converterDeResultSetParaEntidade(ResultSet resultado) throws SQLException {
+	private Pessoa converterDeResultSetParaEntidade(ResultSet resultado) throws SQLException {
 
-		PessoaVO pessoa = new PessoaVO();
+		Pessoa pessoa = new Pessoa();
 
 		pessoa.setId(resultado.getInt("id"));
 		pessoa.setNome(resultado.getString("nome"));
@@ -119,7 +119,7 @@ public class PessoaDAO {
 		return pessoa;
 	}
 
-	public boolean atualizar(PessoaVO pessoa) {
+	public boolean atualizarPessoa(Pessoa pessoa) {
 		
 		boolean deuBom = false;
 
@@ -151,7 +151,7 @@ public class PessoaDAO {
 
 	}
 
-	public boolean escluir(int id) {
+	public boolean escluirPessoa(int id) {
 
 		boolean deuBom = false;
 		Connection conexao = Banco.getConnection();

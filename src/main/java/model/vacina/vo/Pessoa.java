@@ -1,9 +1,9 @@
-package model.vo.vacina;
+package model.vacina.vo;
 
 import java.time.LocalDate;
 
 
-public class PessoaVO {
+public class Pessoa {
 
 	private int id;
 	private String nome;
@@ -12,11 +12,11 @@ public class PessoaVO {
 	private String cpf;
 	private TipoPessoa tipo;
 	
-	public PessoaVO() {
+	public Pessoa() {
 		super();
 	}
 
-	public PessoaVO(int id, String nome, LocalDate dataNascimento, char sexo, String cpf, TipoPessoa tipo) {
+	public Pessoa(int id, String nome, LocalDate dataNascimento, char sexo, String cpf, TipoPessoa tipo) {
 		super();
 		this.id = id;
 		this.nome = nome;
@@ -26,7 +26,7 @@ public class PessoaVO {
 		this.tipo = tipo;
 	}
 	
-	public PessoaVO(String nome, LocalDate dataNascimento, char sexo, String cpf, TipoPessoa tipo) {
+	public Pessoa(String nome, LocalDate dataNascimento, char sexo, String cpf, TipoPessoa tipo) {
 		super();
 		this.id = 0;
 		this.nome = nome;
