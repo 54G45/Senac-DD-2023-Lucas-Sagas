@@ -1,4 +1,4 @@
-package model.vacina.vo;
+package vacina.model.vo;
 
 public enum EstagioVacina {
 	inicial (1),

@@ -1,10 +1,10 @@
-package view;
+package vacina.executavel;
 
 import java.time.LocalDate;
 
-import model.vacina.dao.PessoaDAO;
-import model.vacina.vo.Pessoa;
-import model.vacina.vo.TipoPessoa;
+import vacina.model.dao.PessoaDAO;
+import vacina.model.vo.Pessoa;
+import vacina.model.vo.TipoPessoa;
 
 public class ExecutavelVacina {
 

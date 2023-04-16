@@ -1,39 +1,36 @@
-package model.telefonia.vo;
+package telefonia.model.vo;
 
 public class Telefone {
-
+	
 	private Integer id;
-	private Integer idCliente;
+	private Integer idCliente; //Usado no lugar Cliente para evitar o looping
 	private String ddd;
 	private String numero;
 	private boolean ativo;
 	private boolean movel;
 	
 	public Telefone() {
-		super();
-
+		
 	}
-
+	
 	public Telefone(Integer id, String ddd, String numero, boolean ativo, boolean movel) {
 		super();
 		this.id = id;
-		this.idCliente = 0;
 		this.ddd = ddd;
 		this.numero = numero;
 		this.ativo = ativo;
 		this.movel = movel;
 	}
-
-	public Telefone(Integer id, Integer idCliente, String ddd, String numero, boolean ativo, boolean movel) {
+	
+	
+	public Telefone(String ddd, String numero, boolean ativo, boolean movel) {
 		super();
-		this.id = id;
-		this.idCliente = idCliente;
 		this.ddd = ddd;
 		this.numero = numero;
 		this.ativo = ativo;
 		this.movel = movel;
 	}
-
+	
 	public Integer getId() {
 		return id;
 	}
@@ -81,23 +78,10 @@ public class Telefone {
 	public void setMovel(boolean movel) {
 		this.movel = movel;
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
+	@Override
+	public String toString() {
+		return "Telefone [ddd=" + ddd + ", numero=" + numero + ", ativo=" + ativo + ", movel=" + movel + "]";
+	}
+
 }

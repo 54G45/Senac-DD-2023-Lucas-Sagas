@@ -1,4 +1,4 @@
-package model.vacina.vo;
+package vacina.model.vo;
 
 import java.time.LocalDate;
 
