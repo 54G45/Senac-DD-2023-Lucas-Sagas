@@ -10,8 +10,8 @@ import javax.swing.JFrame;
 import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
 
-import controller.EnderecoController;
-import model.vo.telefonia.Endereco;
+import telefonia.controller.EnderecoController;
+import telefonia.model.vo.Endereco;
 
 public class TelaListagemEnderecos {
 

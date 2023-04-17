@@ -1,20 +1,19 @@
 package telefonia.view;
 
 import java.awt.EventQueue;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
+import javax.swing.JButton;
+import javax.swing.JComboBox;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 
-import controller.EnderecoController;
-import model.exception.CampoInvalidoException;
-import model.vo.telefonia.Endereco;
-
-import javax.swing.JComboBox;
-import javax.swing.JButton;
-import java.awt.event.ActionListener;
-import java.awt.event.ActionEvent;
+import telefonia.controller.EnderecoController;
+import telefonia.model.exception.CampoInvalidoException;
+import telefonia.model.vo.Endereco;
 
 public class TelaCadastroEndereco {
 

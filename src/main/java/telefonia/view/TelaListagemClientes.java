@@ -21,8 +21,8 @@ import javax.swing.text.MaskFormatter;
 
 import com.github.lgooddatepicker.components.DatePicker;
 
-import controller.ClienteController;
-import model.vo.telefonia.Cliente;
+import telefonia.controller.ClienteController;
+import telefonia.model.vo.Cliente;
 
 public class TelaListagemClientes {
 
